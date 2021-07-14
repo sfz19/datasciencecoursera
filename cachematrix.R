@@ -1,5 +1,5 @@
 ## This create special matrix
-library(MASS)
+library(MASS) ##this library is used to calculate inverse of non-sq. matrix
 makeCacheMatrix <- function(x = matrix()) {
   
     Inver <- NULL
