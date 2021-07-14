@@ -1,5 +1,5 @@
 ## This create special matrix
-
+library(MASS)
 makeCacheMatrix <- function(x = matrix()) {
   
     Inver <- NULL
@@ -28,7 +28,7 @@ cacheSolve <- function(x, ...) {
       return(Inver)
     }
     data <- x$get()
-    Inver <- solve(data, ...)
+    Inver <- ginv(data, ...)
     x$setinver(Inver)
     Inver
   
